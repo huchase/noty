@@ -1,0 +1,43 @@
+:root {
+  --chase-noty-box-shadow: 0 0 .3em #77777728;
+}
+
+@keyframes chase-noty-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: "chase-noty-iconfont";
+  src: url('iconfont.woff2?t=1645425478574') format('woff2'),
+       url('iconfont.woff?t=1645425478574') format('woff'),
+       url('iconfont.ttf?t=1645425478574') format('truetype');
+}
+
+.chase-noty-icon {
+  font-family: "chase-noty-iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.chase-noty-icon-loading:before {
+  content: "\e601";
+}
+
+.chase-noty-icon-warn:before {
+  content: "\e61e";
+}
+
+.chase-noty-icon-info:before {
+  content: "\e843";
+}
+
+.chase-noty-icon-error:before {
+  content: "\e651";
+}
+
+.chase-noty-icon-success:before {
+  content: "\e6b6";
+}

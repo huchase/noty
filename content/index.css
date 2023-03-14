@@ -1,0 +1,65 @@
+@import 'common.css';
+
+.chase-noty-item1 {
+  line-height: 1;
+  width: 12em;
+  box-shadow: var(--chase-noty-box-shadow);
+  padding: .8em 1em;
+  margin-bottom: 1em;
+  position: relative;
+  background-color: rgba(255, 255, 255, .86);
+  
+  display: flex;
+  align-items: center;
+}
+
+.chase-noty-item1 .text {
+  line-height: 1.5;
+}
+
+.chase-noty-item1 .chase-noty-icon {
+  box-sizing: content-box;
+  width: 1em;
+  text-align: center;
+  padding: .36em;
+  margin-right: .8em;
+  color: white;
+  border-radius: 50%;
+}
+.chase-noty-item1 .chase-noty-icon-info {
+  background-color: #2db7f5;
+}
+.chase-noty-item1 .chase-noty-icon-success {
+  background-color: #19be6b;
+}
+.chase-noty-item1 .chase-noty-icon-warn {
+  background-color: #ff9900;
+}
+.chase-noty-item1 .chase-noty-icon-error {
+  background-color: #ed4014;
+}
+.chase-noty-item1 .chase-noty-icon-loading {
+  background-color: #2db7f5;
+  animation: 1s chase-noty-spin infinite linear;
+}
+
+.chase-noty-item1 .close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: .38em .5em;
+
+  font-size: .8em;
+  box-sizing: content-box;
+  width: 1em;
+  text-align: center;
+  
+  cursor: pointer;
+  opacity: 0;
+}
+.chase-noty-item1:hover .close-btn {
+  opacity: .5;
+}
+.chase-noty-item1 .close-btn:hover {
+  opacity: .8;
+}
